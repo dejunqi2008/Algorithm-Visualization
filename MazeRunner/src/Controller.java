@@ -1,7 +1,3 @@
-//public class Controller {
-//}
-
-
 import java.awt.*;
 import java.util.LinkedList;
 import java.util.Stack;

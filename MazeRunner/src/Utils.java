@@ -1,8 +1,7 @@
 import javax.swing.*;
-        import java.awt.*;
-        import java.awt.geom.*;
-
-        import java.lang.InterruptedException;
+import java.awt.*;
+import java.awt.geom.*;
+import java.lang.InterruptedException;
 
 public class Utils {
 
