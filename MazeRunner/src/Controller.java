@@ -184,7 +184,7 @@ public class Controller {
 
 
     public static void main(String[] args) {
-        String mazeFile = "maze_101_101.txt";
+        String mazeFile = "maze_data.txt";
         Controller vis = new Controller(mazeFile);
     }
 }
