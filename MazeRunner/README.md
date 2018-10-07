@@ -1,0 +1,1 @@
+### This code solve the maze with three approaches: recursive DFS, iterative DFS, and BFS

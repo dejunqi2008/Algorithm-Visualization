@@ -5,7 +5,7 @@ import java.util.Stack;
 public class Controller {
 
     private static int blockSide = 8;
-    private static int DELAY = 10;
+    private static int DELAY = 5;
     private static int[][] dirs = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
 
     // TODO: create your own data type
@@ -21,10 +21,9 @@ public class Controller {
         EventQueue.invokeLater(() -> {
             frame = new View("Maze visualization", sceneWidth, sceneHeight);
             new Thread(() -> {
-
-//                 mazeRunnerDFSRecursive();
-                 mazeRunnerDFSIterative();
-//                mazeRunnerBFS();
+//                mazeRunnerDFSRecursive();
+//                mazeRunnerDFSIterative();
+                mazeRunnerBFS();
 
             }).start();
         });

@@ -5,6 +5,9 @@ public class MazeData {
 
     private int row, col;
     public char[][] maze;
+    public boolean[][] visited;
+
+    public boolean[][] visible;
 
     private int entranceX, entranceY;
     private int exitX, exitY;
@@ -22,6 +25,10 @@ public class MazeData {
         this.col = col;
 
         maze = new char[row][col];
+        visited = new boolean[row][col];
+        visible = new boolean[row][col];
+
+
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 if (i % 2 == 1 && j % 2 == 1) {
@@ -29,7 +36,8 @@ public class MazeData {
                 } else {
                     maze[i][j] = WALL;
                 }
-
+                visited[i][j] = false;
+                visible[i][j] = false;
             }
         }
 
@@ -48,6 +56,25 @@ public class MazeData {
     public int getEntranceY() {return entranceY;}
     public int getExitX() {return exitX;}
     public int getExitY() {return exitY;}
+
+    public boolean inArea(int x, int y) {
+        return x >= 0 && x < row && y >= 0 && y < col;
+    }
+
+
+    public void setVisible(int x, int y) {
+        if (!inArea(x, y)) {
+            throw new IllegalArgumentException("x, y index out of range");
+        }
+
+        for (int i = x - 1; i <= x + 1; i++) {
+            for (int j = y - 1; j <= y + 1; j++) {
+                if (inArea(i, j)) {
+                    visible[i][j] = true;
+                }
+            }
+        }
+    }
 
 
 }
