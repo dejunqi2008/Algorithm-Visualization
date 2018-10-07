@@ -62,8 +62,6 @@ public class MazeView extends JFrame{
 
             // ***************  painting  ***************************************
             // TODO： use your own data type
-
-            System.out.println(data);
             int row = data.getRow();
             int col = data.getCol();
             int w = canvasWidth / col;
@@ -71,7 +69,10 @@ public class MazeView extends JFrame{
 
             for (int i = 0; i < row; i ++) {
                 for (int j = 0; j < col; j++) {
-                    if (data.maze[i][j] == MazeData.WALL) {
+
+                    if (!data.visible[i][j]) {
+                        Utils.setColor(g2d, Utils.Black);
+                    } else if (data.maze[i][j] == MazeData.WALL) {
                         Utils.setColor(g2d, Utils.LightBlue);
                     } else {
                         Utils.setColor(g2d, Utils.White);
