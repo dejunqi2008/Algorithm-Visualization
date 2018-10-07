@@ -3,9 +3,11 @@
 ### Maze Generator - generate a random maze
 
 1. Random Maze
+
 [![Real Random Maze](https://i.ytimg.com/vi/4BVG5mA6UzE/hqdefault.jpg)](https://youtu.be/4BVG5mA6UzE)
 
 2. Not random enough
+
 [![Random Maze](https://i.ytimg.com/vi/JKMu2cw0rmA/hqdefault.jpg)](https://youtu.be/JKMu2cw0rmA)
 
 [![Random Maze - fancy version](https://i.ytimg.com/vi/BcaoUZlMrZE/hqdefault.jpg)](https://youtu.be/BcaoUZlMrZE)

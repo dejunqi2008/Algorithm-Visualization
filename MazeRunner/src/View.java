@@ -38,7 +38,7 @@ public class View extends JFrame{
     public int getCanvasWidth(){return canvasWidth;}
     public int getCanvasHeight(){return canvasHeight;}
 
-    // TODO: set your own data type
+
     private MazeData data;
     public void render(MazeData data){
         this.data = data;
@@ -65,7 +65,6 @@ public class View extends JFrame{
             g2d.addRenderingHints(hints);
 
             // ***************  painting  ***************************************
-            // TODO： use your own data type
             int w = canvasWidth / data.N();
             int h = canvasHeight / data.M();
 

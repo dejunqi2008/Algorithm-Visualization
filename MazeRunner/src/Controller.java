@@ -8,7 +8,6 @@ public class Controller {
     private static int DELAY = 5;
     private static int[][] dirs = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
 
-    // TODO: create your own data type
     private MazeData data;        // data
     private View frame;    // view
 
