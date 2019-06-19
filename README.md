@@ -1,4 +1,3 @@
-## Algorithm Visualization
 
 ### Maze Generator - generate a random maze
 
