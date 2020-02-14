@@ -118,8 +118,8 @@ public class MazeController {
             int row = maze.length;
             int col = maze[0].length;
             StringBuilder sb = new StringBuilder();
-            sb.append(Integer.toString(row) + " ");
-            sb.append(Integer.toString(col));
+            sb.append(row + " ");
+            sb.append(col);
             sb.append("\n");
 
             for (int i = 0; i < row; i++) {
